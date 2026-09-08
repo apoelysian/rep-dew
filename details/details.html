@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes e Imagens Responsivas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../home.html">← Voltar para Home</a>
+        <h1>Demonstração: Picture e Details</h1>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Imagem Responsiva com &lt;picture&gt;</h2>
+        <picture>
+            <source srcset="../img/o_minimalista.png" type="image/webp">
+            <source srcset="../img/o_minimalista.png" media="(max-width: 600px)">
+            <img src="../img/o_minimalista.png" alt="mentalist">
+        </picture>
+    </section>
+
+    <section>
+        <h2>Caixa Retrátil com &lt;details&gt;</h2>
+        <p>O elemento <code>&lt;details&gt;</code> oculta informações por padrão. O conteúdo interno só é revelado
+            quando o usuário clica sobre o <code>&lt;summary&gt;</code>.</p>
+
+        <details>
+            <summary>Clique para ver a ficha técnica da apresentação</summary>
+            <p>Este componente funciona como um acordeão nativo do HTML5, útil para perguntas frequentes (FAQ) ou
+                detalhes adicionais sem sobrecarregar a interface. Por exemplo:</p>
+            <ul>
+                <li><strong>Disciplina:</strong> Desenvolvimento Web</li>
+                <li><strong>Tema:</strong> Tags Semânticas, Picture e Details</li>
+                <li><strong>Compatibilidade:</strong> Suportado nativamente pelos principais navegadores</li>
+            </ul>
+        </details>
+    </section>
+</body>
+
+</html>

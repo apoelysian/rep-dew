@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Tabelas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../home.html">← Voltar para Home</a>
+        <h1>Exemplos de Tabelas HTML</h1>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>1. Tabela (&lt;table&gt;)</h2>
+        <p>Uma tabela em HTML consiste em células de tabela dentro de linhas e colunas. Todo o conteúdo da tabela fica dentro da tag <code>&lt;table&gt;</code>:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bebida</th>
+                    <th>Tipo</th>
+                    <th>Cafeína</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Café</td>
+                    <td>Quente</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Chá</td>
+                    <td>Quente</td>
+                    <td>Depende</td>
+                </tr>
+                <tr>
+                    <td>Energético</td>
+                    <td>Gelado</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>2. Linha da Tabela (&lt;tr&gt;)</h2>
+        <p>Cada linha da tabela começa com uma tag <code>&lt;tr&gt;</code> e termina com uma tag <code>&lt;/tr&gt;</code>. Aqui, cada linha é uma bebida diferente:</p>
+        <table>
+            <tr>
+                <td>Café</td>
+            </tr>
+            <tr>
+                <td>Chá</td>
+            </tr>
+            <tr>
+                <td>Energético</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>3. Célula de Dado (&lt;td&gt;)</h2>
+        <p>Cada célula da tabela é definida por uma tag <code>&lt;td&gt;</code>. Tudo entre a abertura e o fechamento é o conteúdo daquela célula:</p>
+        <table>
+            <tr>
+                <td>Café</td>
+                <td>Quente</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>4. Célula de Cabeçalho (&lt;th&gt;)</h2>
+        <p>Quando a célula representa um título de coluna, usa-se <code>&lt;th&gt;</code> em vez de <code>&lt;td&gt;</code>. Os navegadores já deixam o texto em negrito e centralizado por padrão:</p>
+        <table>
+            <tr>
+                <th>Bebida</th>
+                <th>Tipo</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>5. Cabeçalho da Tabela (&lt;thead&gt;)</h2>
+        <p>A tag <code>&lt;thead&gt;</code> agrupa a linha (ou linhas) de cabeçalho, separando-a do restante dos dados da tabela:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bebida</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>6. Corpo da Tabela (&lt;tbody&gt;)</h2>
+        <p>A tag <code>&lt;tbody&gt;</code> agrupa as linhas que contêm os dados propriamente ditos, sempre depois do <code>&lt;thead&gt;</code>:</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Café</td>
+                    <td>Quente</td>
+                </tr>
+                <tr>
+                    <td>Chá</td>
+                    <td>Quente</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>7. Tabela Completa</h2>
+        <p>Juntando <code>table</code>, <code>thead</code>, <code>tbody</code>, <code>tr</code>, <code>th</code> e <code>td</code> em um único exemplo funcional — a mesma tabela mostrada no início desta página:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bebida</th>
+                    <th>Tipo</th>
+                    <th>Cafeína</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Café</td>
+                    <td>Quente</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Chá</td>
+                    <td>Quente</td>
+                    <td>Depende</td>
+                </tr>
+                <tr>
+                    <td>Energético</td>
+                    <td>Gelado</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>
