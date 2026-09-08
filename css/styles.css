@@ -111,7 +111,6 @@ figure img {
 figcaption {
     font-size: 0.9rem;
     color: #9cdcfe;
-    /* legenda dos figures */
     margin-top: 8px;
     font-style: italic;
     text-align: center;
@@ -126,15 +125,16 @@ code {
     font-family: Consolas, 'Courier New', monospace;
     font-size: 0.95em;
 }
+
 /* Borda na imagem picture */
 picture img {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 16px 0;
-  border-radius: 6px;
-  border: 2px solid #333333;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px 0;
+    border-radius: 6px;
+    border: 2px solid #333333;
 }
 
 table {
@@ -147,11 +147,11 @@ table {
     overflow: hidden;
     border: 1px solid #333333;
 }
- 
+
 thead {
     background-color: #ff6b4a;
 }
- 
+
 th {
     background-color: #ff6b4a;
     color: #1e1e1e;
@@ -160,17 +160,133 @@ th {
     padding: 10px 14px;
     border: 1px solid #ff6b4a;
 }
- 
+
 tbody td {
     padding: 10px 14px;
     border: 1px solid #333333;
     color: #d4d4d4;
 }
- 
+
 tbody tr:nth-child(even) {
     background-color: #2a2a2b;
 }
- 
+
 tbody tr:hover {
     background-color: #333333;
 }
+
+/* Centralizando pagina de artigos */
+.pagina-centralizada {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.topo-voltar {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.card-artigo {
+    background-color: #252526;
+    border: 1px solid #333333;
+    border-left: 5px solid #ff6b4a;
+    padding: 32px;
+    border-radius: 8px;
+    max-width: 580px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-artigo h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.card-artigo p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.tag-destaque {
+    color: #ff6b4a;
+    font-weight: bold;
+}
+
+.destaque-tag {
+    color: #4ade80;
+    background-color: #2d2d2d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/* video */
+video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin: 16px 0;
+}
+
+/* audio */
+audio {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    border-radius: 28px;
+    margin: 16px 0;
+    outline: none;
+}
+
+/* Ajuste nos controles audio e video */
+audio::-webkit-media-controls-panel {
+    background-color: #252526;
+}
+
+video::-webkit-media-controls-panel {
+    background-color: transparent;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+    color: #cccccc;
+}
+
+/* Destaque e Separação (Tema Bruno) */
+mark {
+  background-color: #ff6b4a; /* Laranja da paleta */
+  color: #1e1e1e;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+small {
+  color: #888888;
+  font-size: 0.85rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333333;
+  margin: 24px 0;
+}
+
